@@ -1,0 +1,8 @@
+registro:
+    path:     /registro
+    defaults: { _controller: GfctBundle:Seguridad:registro}
+login:
+    path:     /login
+    defaults: { _controller: GfctBundle:Seguridad:login}
+logout:
+    path:     /logout

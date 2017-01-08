@@ -1,0 +1,25 @@
+gfct_homepage:
+    path:     /
+    defaults: { _controller: GfctBundle:Default:index }
+
+gfct_empresas:
+    path:     /empresa/all
+    defaults: { _controller: GfctBundle:Empresa:empresaAll }
+
+gfct_empresas_nueva:
+    path:     /empresa/new
+    defaults: { _controller: GfctBundle:Empresa:empresaNew }
+
+gfct_alumnos:
+    path:     /alumno/all
+    defaults: { _controller: GfctBundle:Alumno:alumnoAll }
+
+api_empresas:
+    path:     /api/empresas
+    defaults: { _controller: GfctBundle:Api:empresas }
+    methods:  [GET]
+
+api_empresas_nueva:
+    path:     /api/empresas
+    defaults: { _controller: GfctBundle:Api:empresasNueva }
+    methods:  [POST]

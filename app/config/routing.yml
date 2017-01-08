@@ -1,0 +1,11 @@
+gfct:
+    resource: "@GfctBundle/Resources/config/routing.yml"
+    prefix:   /
+
+gfct_security:
+    resource: "@GfctBundle/Resources/config/routing_security.yml"
+    prefix:   /
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation

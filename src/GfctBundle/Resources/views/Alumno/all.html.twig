@@ -1,0 +1,37 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+<table class="table table-bordered tablaGfct">
+    <thead>
+      <tr>
+        <th>
+          #
+        </th>
+        <th>
+          Nombre
+        </th>
+        <th>
+          Apellido 1
+        </th>
+        <th>
+          Apellido 2
+        </th>
+        <th>
+          Ciclo
+        </th>
+        <th>
+          Nombre empresa
+        </th>
+      </tr>
+    </thead>
+    {% for alumno in alumnos %}
+        <tr>
+          <td>{{alumno.id }}</td>
+          <td>{{alumno.nombre}}</td>
+          <td>{{alumno.apellido1}}</td>
+          <td>{{alumno.apellido2}}</td>
+          <td>{{alumno.ciclo}}</td>
+          <td>{{alumno.empresa.nombre}}</td>
+        </tr>
+    {% endfor %}
+</table>
+{% endblock %}
